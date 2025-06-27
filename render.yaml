@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: aira-telegram-bot
+    env: python
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: OWNER_ID
+        sync: false
