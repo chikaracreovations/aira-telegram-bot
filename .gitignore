@@ -1,0 +1,5 @@
+aira_session*          # Telethon session file
+.env
+__pycache__/
+*.pyc
+aira_summaries.txt
