@@ -98,6 +98,6 @@ Use a string session instead of session files for safer deployments
 
 📞 Contact
 
-Want to customize or extend Aira? Reach out or fork this repo — and remember to stay polite like Aira 😉
+### Want to customize or extend Aira? Reach out or fork this repo — and remember to stay polite like Aira 😉
 ---
 
