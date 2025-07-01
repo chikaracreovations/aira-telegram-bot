@@ -1,3 +1,5 @@
+from flask import Flask
+import threading
 from telethon import TelegramClient, events
 import requests
 import asyncio
@@ -179,8 +181,26 @@ async def handler(event):
     except Exception as e:
         print("⚠️ Error in handler:", e)
 
+
+app = Flask(__name__)
+
+@app.route("/")
+def ping():
+    return "Aira is awake!"
+
+def run_flask():
+    app.run(host="0.0.0.0", port=8000)
+    
+    
+
+
 # 🔧 Run
+    
 if __name__ == "__main__":
+    # Start the keep-alive web server
+    threading.Thread(target=run_flask).start()
+
+    # Start the Telegram client
     print("🤖 Aira is now running...")
     client.start()
     client.run_until_disconnected()
