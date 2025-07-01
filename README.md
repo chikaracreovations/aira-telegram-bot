@@ -24,11 +24,15 @@ Aira is a focused Telegram bot built using Telethon and OpenRouter. It acts as a
 
 2. Create and activate a virtual environment
 
+```bash
 python -m venv venv
 source venv/bin/activate  # on Windows: venv\Scripts\activate
+```
 
 3. Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 4. Set up environment variables
 Rename .env.example to .env
@@ -43,14 +47,17 @@ OWNER_ID
 5. (Optional) Generate a String Session
 If you don’t want to use .session files, generate a session string:
 
+```bash
 python generate_session.py
+```
 
 Paste the output into your .env under SESSION_STRING.
 
 
 6. Start the bot
+```bash
 python main.py
-
+```
 ---
 
 🔹 Option 2: Deploy on Render (Userbot via Worker Service)
