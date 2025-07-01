@@ -36,6 +36,7 @@ pip install -r requirements.txt
 
 4. Set up environment variables
 Rename .env.example to .env
+
 Fill in your:
 API_ID
 API_HASH
@@ -60,7 +61,7 @@ python main.py
 ```
 ---
 
-🔹 Option 2: Deploy on Render (Userbot via Worker Service)
+### 🔹 Option 2: Deploy on Render (Userbot via Worker Service)
 
 > Telethon userbots need to run as long-lived background processes. This works best using a Worker service on Render.
 
